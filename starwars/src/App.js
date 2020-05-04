@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from './components/Character';
 
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -29,7 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-        <div className="container">
+      <div className="container">
           {characters.map(character => (
             <Character key={character.id} name={character.name} species={character.species} image={character.image} location={character.location} status={character.status}/>
           ))}

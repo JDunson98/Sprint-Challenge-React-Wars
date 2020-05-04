@@ -8,5 +8,9 @@
 /* write your parent styles in here for your App.js */
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  padding: 10px;
 }
